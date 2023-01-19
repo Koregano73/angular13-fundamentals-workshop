@@ -1,14 +1,20 @@
 
 # Module 01: Component Challenges
 In the `src/app/courses/courses.component.ts` file, complete the following challenges.
-- Display courses using `ngFor`
-- Add event handler to select course
-- Display raw JSON of selected course
+- Display courses using `ngFor` DONE
+- Add event handler to select course DONE
+- Display raw JSON of selected course DONE
+Render 'src/app/home/home.component.html' file challenges by completing:
+- display lessons with ngFor DONE
+- add event handler to select lesson DONE
+- display raw json of selected course DONE
 
 # Module 02: Form Challenges
 In the `src/app/courses/courses.component.ts` file, complete the following challenges.
-- Update the form to show `percentComplete`
-- Update the form to show `favorite`
+- Update the form to show `percentComplete` DONE
+- Update the form to show `favorite` DONE ngmodel and name using angular comp.io
+- BONUS: how to edit course without mutating other parts? DONE (just make the selected course a deep copy)
+**HINT:**: use a slider for percent complete and a checkbox for favorite
 
 # Module 03: Services Challenges
 Complete the following challenges.

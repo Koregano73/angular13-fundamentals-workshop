@@ -19,5 +19,10 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
+  selectedCourse: {title: string};
+  selectCourse(course:{title:string}):void {
+    this.selectedCourse = course;
+    // console.log(this.selectedCourse);
+  }
   ngOnInit() {}
 }
