@@ -18,17 +18,17 @@ In the `src/app/courses/courses.component.ts` file, complete the following chall
 
 # Module 03: Services Challenges
 Complete the following challenges.
-- Generate a `LessonsService` service
-- Inject `LessonsService` into `HomeComponent`
-- Move `lessons` to the `LessonsService` and consume in the `HomeComponent`
+- Generate a `LessonsService` service DONE
+- Inject `LessonsService` into `HomeComponent` DONE
+- Move `lessons` to the `LessonsService` and consume in the `HomeComponent` DONE
 
 **HINT:** `ng g s shared/services/lessons -d`
 
 # Module 04: Server Communication Challenges
 Complete the following challenges.
-- Complete remote update call functionality in the `CoursesService`
-- Complete remote delete call functionality in the `CoursesService`
-- Update the `CoursesComponent` to display remote data
+- Complete remote update call functionality in the `CoursesService` DONE
+- Complete remote delete call functionality in the `CoursesService` DONE
+- Update the `CoursesComponent` to display remote data DONE
 
 # Module 05: Component Driven Architecture Challenges
 Complete the following challenges.

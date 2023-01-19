@@ -5,7 +5,7 @@
   <mat-card-content>
     <!-- LESSON LIST -->
     <mat-list>
-      <mat-list-item *ngFor="let course of courseLessons" (click)="selectCourse(course)">
+      <mat-list-item *ngFor="let course of lessons" (click)="selectCourse(course)">
         <h3 matLine>{{course.title | titlecase}}</h3>
       </mat-list-item>
     </mat-list>
