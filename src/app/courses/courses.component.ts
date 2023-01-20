@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { empty } from 'rxjs';
+import { empty, Observable } from 'rxjs';
 
 import { Course } from '../common/models/course';
 import { CoursesService } from '../common/services/courses.service';
@@ -14,7 +14,7 @@ export class CoursesComponent implements OnInit {
   // 2. select a course
   // 3. render a selected course
   courses: any= [];
-  
+  courses$: any;
   selectedCourse: Course;
   originalTitle = '';
 
@@ -25,8 +25,7 @@ export class CoursesComponent implements OnInit {
 
   selectCourse(course) {
     // detach selected course from course by deep copying it so dont mutate other states
-    this.selectedCourse = {...course};
-    this.originalTitle = course.title;
+    this.selectedCourse = course;
   }
 
   deleteCourse(courseId: number) {
@@ -36,8 +35,10 @@ export class CoursesComponent implements OnInit {
 
 
   fetchCourses() {
-    this.courses = this.coursesService.all()
-      .subscribe(result => this.courses = result);
+    // now can just use var$ and then put thru async pipe i.e. course$ | async to say that you are async piping it into html
+    this.courses$ = this.coursesService.all();
+    // this.courses = this.coursesService.all()
+    //   .subscribe(result => this.courses = result);
   }
 
   saveCourse(course: Course) {

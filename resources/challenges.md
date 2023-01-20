@@ -32,9 +32,9 @@ Complete the following challenges.
 
 # Module 05: Component Driven Architecture Challenges
 Complete the following challenges.
-- Generate a `LessonsListComponent` component 
-- Create the appropriate inputs and outputs
-- Render `LessonsList` component
+- Generate a `LessonsListComponent` component  
+- Create the appropriate inputs and outputs 
+- Render `LessonsList` component 
 
 **HINT:** `ng g c lessons/lessons -m app.module.ts -d`
 
