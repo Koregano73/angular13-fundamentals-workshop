@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { CourseDetailsComponent } from './courses/course-details/course-details.component';
 import { CoursesListComponent } from './courses/courses-list/courses-list.component';
 import { LessonsComponent } from './lessons/lessons/lessons.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import { LessonsComponent } from './lessons/lessons/lessons.component';
     HttpClientModule,
     FormsModule,
   ],
-  declarations: [AppComponent, HomeComponent, CoursesComponent, CourseDetailsComponent, CoursesListComponent, LessonsComponent],
+  declarations: [AppComponent, HomeComponent, CoursesComponent, CourseDetailsComponent, CoursesListComponent, LessonsComponent, UsersComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

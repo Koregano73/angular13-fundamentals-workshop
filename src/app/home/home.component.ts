@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Lesson } from '../common/models/lesson';
 import { LessonsService } from '../common/services/lessons.service';
 
 @Component({
@@ -8,14 +9,14 @@ import { LessonsService } from '../common/services/lessons.service';
 })
 export class HomeComponent implements OnInit {
   lessons$;
-  lessons = [];
+  lessons:Lesson[] = [];
 
   constructor(private lessonsService: LessonsService) {}
 
-  selectedCourse: {title: string};
+  selectedLesson: {title: string};
 
-  selectCourse(course:{title:string}):void {
-    this.selectedCourse = course;
+  selectLesson(lesson:{title:string}):void {
+    this.selectedLesson = lesson;
     // console.log(this.selectedCourse);
   }
   ngOnInit() {

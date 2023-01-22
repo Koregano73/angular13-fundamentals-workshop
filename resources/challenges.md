@@ -32,14 +32,14 @@ Complete the following challenges.
 
 # Module 05: Component Driven Architecture Challenges
 Complete the following challenges.
-- Generate a `LessonsListComponent` component  
-- Create the appropriate inputs and outputs 
-- Render `LessonsList` component 
+- Generate a `LessonsListComponent` component  DONE
+- Create the appropriate inputs and outputs DONE
+- Render `LessonsList` component DONE
 
 **HINT:** `ng g c lessons/lessons -m app.module.ts -d`
 
 # Module 06: Routing Challenges
 Complete the following challenges.
-- Generate a `UsersComponent` component
-- Create a new `users` route
-- Update the `AppComponent` to create link to the `users` route in the `SideNav`
+- Generate a `UsersComponent` component DONE
+- Create a new `users` route DONE
+- Update the `AppComponent` to create link to the `users` route in the `SideNav` DONE
